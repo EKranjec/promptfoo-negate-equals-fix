@@ -150,7 +150,6 @@ export class MistralChatCompletionProvider implements ApiProvider {
   }
 
   getApiKey(): string | undefined {
-    logger.debug(`Mistral apiKeyenvar: ${this.config.apiKeyEnvar}`);
     return (
       this.config.apiKey ||
       (this.config?.apiKeyEnvar
